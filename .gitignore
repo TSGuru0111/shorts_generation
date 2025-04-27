@@ -1,0 +1,14 @@
+__pycache__/
+.env
+cookies.txt
+*.mp4
+*.mkv
+*.webm
+outputs/
+shorts/
+*.pyc
+.venv/
+token.pickle
+client_secrets.json
+.DS_Store
+.vscode/

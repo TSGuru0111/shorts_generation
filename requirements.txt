@@ -1,0 +1,9 @@
+yt-dlp>=2024.3.10
+pytube>=15.0.0
+requests>=2.31.0
+openai-whisper>=20231117
+moviepy>=1.0.3
+ffmpeg-python>=0.2.0
+cohere>=4.44
+Pillow>=10.2.0
+python-dotenv>=1.0.1
