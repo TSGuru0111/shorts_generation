@@ -405,3 +405,21 @@ def download_video(url: str, output_path: str = "input.mp4") -> str:
         if os.path.exists(output_path):
             os.remove(output_path)
         return None
+
+if __name__ == "__main__":
+    import sys
+    
+    if len(sys.argv) < 2:
+        print("Usage: python downloader.py <youtube_url> [output_path]")
+        sys.exit(1)
+    
+    url = sys.argv[1]
+    output_path = sys.argv[2] if len(sys.argv) > 2 else "input.mp4"
+    
+    result = download_video(url, output_path)
+    
+    if result:
+        print(f"Video successfully downloaded to {result}")
+    else:
+        print("Failed to download video")
+        sys.exit(1)
